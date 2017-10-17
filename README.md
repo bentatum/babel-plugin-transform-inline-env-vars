@@ -20,7 +20,7 @@ process.env.NODE_ENV;
 ## Installation
 
 ```sh
-npm install babel-plugin-transform-inline-environment-variables
+npm install babel-plugin-transform-inline-env-vars
 ```
 
 ## Usage
@@ -32,13 +32,13 @@ npm install babel-plugin-transform-inline-environment-variables
 ```json
 // without options
 {
-  "plugins": ["transform-inline-environment-variables"]
+  "plugins": ["transform-inline-env-vars"]
 }
 
 // with options
 {
   "plugins": [
-    ["transform-inline-environment-variables", {
+    ["transform-inline-env-vars", {
       "include": [
         "NODE_ENV"
       ]
@@ -50,14 +50,14 @@ npm install babel-plugin-transform-inline-environment-variables
 ### Via CLI
 
 ```sh
-babel --plugins transform-inline-environment-variables script.js
+babel --plugins transform-inline-env-vars script.js
 ```
 
 ### Via Node API
 
 ```javascript
 require("babel-core").transform("code", {
-  plugins: ["transform-inline-environment-variables"]
+  plugins: ["transform-inline-env-vars"]
 });
 ```
 
